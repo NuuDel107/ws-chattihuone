@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Helvetillinen chattihuone</title>
+        <link rel="icon" href="media/chat-bubble.ico" type="image/ico" />
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+
+    <body>
+        <ul id="messages"></ul>
+
+        <form id="msg-form" action="">
+            <input id="msg-input" autocomplete="off" placeholder="Kirjoita jotain!" autofocus="true"/>
+            <button id="msg-button">Lähetä</button>
+        </form>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script src="js/socket.js"></script>
+    </body>
+
+</html>
