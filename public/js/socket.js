@@ -1,6 +1,7 @@
 var socket = io();
 
 var messageList = document.getElementById("messages");
+var messageContainer = document.getElementById("message-container")
 var msgForm = document.getElementById("msg-form");
 var msgInput = document.getElementById("msg-input");
 
@@ -16,5 +17,5 @@ socket.on("message", (msg) => {
     var msgElement = document.createElement("li");
     msgElement.textContent = msg;
     messageList.append(msgElement);
-    window.scrollTo(0, document.body.scrollHeight);
+    messageContainer.scrollTop = messageContainer.scrollHeight;
 });
